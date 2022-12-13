@@ -1,0 +1,43 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container table-list">
+  <div class="row">
+      <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+      <!-- list column -->
+    <div class="col-md">
+        <table class="table">
+            <h2>Suspected Spider-People</h2> <br>
+          <thead>
+            <tr>
+              <th scope="col">Alias</th>
+              <th scope="col">Real Name</th>
+              <th scope="col">Status</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+               {% for e in entry %}
+            <tr>
+                <td>{{ e.alias }}</td>
+                <td class="row-list">{{ e.real_name }}</td>
+                <td class="row-list">{{ e.status }}</td>
+                <td><a href="{% url 'dailyBugle_details' e.id %}">Details</a></td>
+            </tr>
+                {% endfor %}
+          </tbody>
+        </table>
+    </div>
+      <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+    <div class="btn-list">
+        <a class="btn btn-light" href="{% url 'dailyBugle_create' %}" role="button">Report a Spider</a>
+    </div>
+</div>
+
+{% endblock %}

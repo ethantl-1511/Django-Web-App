@@ -1,0 +1,41 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container table-facts">
+  <div class="row">
+      <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+      <!-- list column -->
+    <div class="col-md">
+        <table class="table">
+            <h2>Favorite Facts</h2>
+            <br>
+          <thead>
+            <tr>
+                <th scope="col">Facts</th>
+                <th scope="col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for e in entry %}
+            <tr>
+                <td>{{ e.random_fact }}</td>
+                <td>{{ e.fact_source }}</td>
+                <td><a href="{% url 'dailyBugle_deleteAPI' e.id %}">Remove</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <br>
+        <right><a class="btn btn-light" href="{% url 'dailyBugle_api' %}" role="button">Return to Facts</a></right>
+    </div>
+      <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+{% endblock %}

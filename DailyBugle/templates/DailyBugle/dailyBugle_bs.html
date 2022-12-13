@@ -1,0 +1,30 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- api column -->
+    <div class="col-md">
+        <div class="display-bs">
+            <h2 class="founder-text">FOUNDER</h2>
+            <h1 class="founder-title">J. JONAH JAMESON</h1>
+            <br>
+            <img class="founder-image" src="/static/images/JJJ.png" alt="J. Jonah Jameson">
+            <br>
+            <blockquote class="founder"> "{{ clean_quote }}" <h7 class="signature">-John Jonah Jameson, Jr.<h7> </blockquote>
+            <br>
+            <h7 class="text-right">Web-Scrapped Source: <a href="https://marvel.fandom.com/wiki/John_Jonah_Jameson_(Earth-616)">https://marvel.fandom.com/</a><h7>
+            <br><br>
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+{% endblock %}

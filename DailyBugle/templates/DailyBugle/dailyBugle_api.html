@@ -1,0 +1,36 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- api column -->
+    <div class="col-md">
+        <div class="display-api">
+            <h2>Daily Random Bugle Facts</h2>
+            <br>
+            <div class="quote">
+                <blockquote class="save_api"> {{ api_text }} </blockquote>
+            </div>
+            <br>
+            <div class="center">
+                <input type="button" class="btn btn-primary" onclick="refreshPage()" value="Random Fact">
+                <right class="right-center"><a class="btn btn-success" href="{% url 'dailyBugle_favoriteAPI' %}?random_fact={{ api_text }}&fact_source={{ api_source }}" role="button">Save</a>
+                <br><a class="btn btn-light" href="{% url 'dailyBugle_favoriteAPI' %}" role="button">Check Favorites</a></right>
+                <br><br>
+            </div>
+            <br>
+            <h7>Source: <a href="{{ api_source_url }}">{{ api_source }}</a></h7>
+            <h7 class="text-right">API: <a href="https://uselessfacts.jsph.pl/">https://uselessfacts.jsph.pl/</a></h7>
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% load static %}
+
+<html class="background" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} The Daily Bugle {% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/dailyBugle.css' %}">
+    </head>
+    <body>
+        <!-- Navbar -->
+        {% include "dailyBugle_navbar.html" %}
+        <!-- Banner -->
+            <header class="banner-base">
+                <h1>{% block header %}{% endblock %}</h1>
+            </header>
+        <!-- Content -->
+            <div class="home-content">
+                {% block content %}{% endblock %}
+            </div>
+        <!-- Footer -->
+        {% include "dailyBugle_footer.html" %}
+
+        <!-- Optional JavaScript -->
+        {%  block javascript %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="{% static 'js/dailyBugle.js' %}"></script>
+        {%  endblock %}
+    </body>
+</html>

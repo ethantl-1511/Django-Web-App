@@ -1,0 +1,202 @@
+/**
+    General stylings
+**/
+.background, body {
+    background-image: url("/static/images/dailyBugleBG.png");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.btn-light {
+    background-color: lightgray;
+}
+
+.banner {
+    margin-top: 1%;
+}
+
+#footer {
+    letter-spacing: .1vw;
+    text-align: center;
+    padding: 0.5%;
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+}
+
+.home-center {
+    margin-left: 25%;
+}
+.center {
+    margin-left: 200px;
+}
+
+/**
+    Navbar stylings
+**/
+.navbar {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    top: 0; /* This ensures no space is displayed above the navbar */
+    z-index: 1; /* Ensures other elements don't overlap navbar */
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a:hover {
+    color: darkgrey;
+}
+
+/**
+    Home page stylings
+**/
+
+.home-alert {
+    margin-top: 5%;
+    margin-left: 2.5%;
+}
+
+.main-content, h2, h3, .row-details {
+    text-align: center;
+}
+
+.row-details {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h7 {
+    font-size: 66%;
+}
+
+/**
+    Tracker/Create/List/Detail page stylings
+**/
+.create-report, .table-list, .table-details, .display-api, .display-bs {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding: 2%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	text-align: left;
+}
+
+.table-facts {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding: 2%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.table-list, {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding: 2%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.row-list, .reported_by {
+    text-transform: capitalize;
+}
+
+.delete-btns {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding: 2%;
+	margin-top: 30px;
+	width: 600px;
+}
+
+move {
+    margin-left: 37.5%;
+}
+
+right {
+    float: right;
+}
+.right-center {
+    text-align: center;
+}
+
+/**
+    API stylings
+**/
+
+.quote {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.text-right {
+    float: right;
+    font-style: italic;
+}
+
+/**
+    Beautiful Soup stylings
+**/
+
+.display-bs {
+    padding: 4%;
+    background-color: white;
+}
+
+.founder-image {
+    max-width: 75%;
+    border-style: solid;
+    border-color: black;
+    border-width: 8px;
+    border-radius: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.founder-text {
+    font-family: impact;
+    text-decoration: underline;
+}
+
+.founder-title {
+    font-family: impact;
+    text-align: center;
+    font-size: 60px;
+}
+
+.signature {
+    padding-left: 2%;
+}

@@ -1,0 +1,27 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-sm">
+    </div>
+          <!-- form column -->
+    <div class="col-sm">
+        <div class="delete-btns">
+            <form method="POST">
+                    <h3>Delete "{{ entry.alias }}"?</h3> <br>
+                    {% csrf_token %}
+                    <move><button type="submit" class="btn btn-danger delete-btn">Delete</button>
+                        <a class="btn btn-light cancel-btn" href="{% url 'dailyBugle_details' entry.id %}" role="button">Cancel</a></move>
+            </form>
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- details column -->
+    <div class="col-md table-details">
+        <h2>Details...</h2>
+            <p class="lead">
+                <div class="alert alert-danger" role="alert">
+                    <div class="container">
+                      <div class="row row-details">
+                        <div class="col">Alias:</div>
+                        <div class="col">Name:</div>
+                        <div class="col">Status:</div>
+                        <div class="w-100"></div>
+                        <div class="col">{{ entry.alias }}</div>
+                        <div class="col">{{ entry.real_name }}</div>
+                        <div class="col">{{ entry.status }}</div>
+                      </div>
+                    </div>
+                </div>
+              <div class="alert alert-primary" role="alert">
+                  {{ entry.description }}</p>
+                  <hr>
+                  <h7 class="reported_by">Reported by: {{ entry.reporter }}</h7>
+              </div>
+        <div class="btn-list">
+            <a class="btn btn-light" href="{% url 'dailyBugle_list' %}" role="button">Return to List</a>
+            <a class="btn btn-light edit-btn" href="{% url 'dailyBugle_edit' entry.id %}" role="button">Edit Report</a>
+            <right>
+                <a class="btn btn-danger cancel-btn" href="{% url 'dailyBugle_delete' entry.id %}" role="button">Delete Report</a>
+            </right>
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

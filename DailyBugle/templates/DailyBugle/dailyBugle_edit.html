@@ -1,0 +1,33 @@
+{% extends 'dailyBugle_base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- form column -->
+    <div class="col-md">
+        <div class="create-report">
+            <form method="POST">
+                <h2>Update Report:</h2> <br>
+                {% csrf_token %}
+                {% load crispy_forms_tags %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-primary" name="save_report">Save Changes</button>
+                <a class="btn btn-light cancel-btn" href="{% url 'dailyBugle_list' %}" role="button">Cancel</a>
+                <right>
+                <a class="btn btn-danger cancel-btn" href="{% url 'dailyBugle_delete' entry.id %}" role="button">Delete Report</a>
+                </right>
+            </form>
+
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+{% endblock %}

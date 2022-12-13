@@ -1,0 +1,42 @@
+{% extends "dailyBugle_base.html" %}
+
+{% block header %}
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- banner column -->
+    <div class="col-md">
+         <img class="banner" src="/static/images/dailyBugleBanner.png" alt="The Daily Bugle">
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content%}
+<div class="container">
+  <div class="row">
+          <!-- blank column 1 -->
+    <div class="col-">
+    </div>
+          <!-- message column -->
+    <div class="col-md home-alert">
+        <div class="alert alert-success" role="alert">
+            <p class="main-content">Welcome to the only spot on the internet where we give you the straight facts about New York City's one true menace to society: SPIDER-MAN!!</p>
+        </div>
+        <div class="home-center">
+            <a class="btn btn-success" href="{% url 'dailyBugle_create' %}" role="button" >Create a Report</a>
+            <a class="btn btn-success" href="{% url 'dailyBugle_list' %}" role="button" >List of Suspects</a>
+            <a class="btn btn-success" href="{% url 'dailyBugle_bs' %}" role="button" >About the Founder</a>
+        </div>
+    </div>
+          <!-- blank column 2 -->
+    <div class="col-">
+    </div>
+  </div>
+</div>
+{% endblock %}
