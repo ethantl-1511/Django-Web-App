@@ -1,4 +1,4 @@
-# Python Live Project
+# Python Internship
 
 ## Introduction
 During a two-week internship with Prosper IT Consulting, I participated in the creation of a database-driven Django web application using Python. This project simulated job experience using the Agile/Scrum methodology; I was given a minimum of 4 stories to complete, and an additional 6 to complete over the course of a two week sprint. I completed all 10 with time to spare.
