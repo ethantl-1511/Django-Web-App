@@ -73,7 +73,7 @@ These functions rendered the home page, and the details page which would be used
           content = {'entry': entry}
           return render(request, 'DailyBugle/dailyBugle_details.html', content)
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-live-project)*
+*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## API Story
 * [Create API](#create-api)
@@ -144,7 +144,7 @@ To ensure the saved list could not be cluttered, I created an additional simple 
           content = {'entry': entry}
           return render(request, 'DailyBugle/dailyBugle_favoriteAPI.html', content)
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-live-project)*
+*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## BeautifulSoup Story
 This story involved learning the basics of BeautifulSoup to pull the elements from a website. I used a variable for the url, made a response request, parsed the page using BeautifulSoup and grabbed the content I wanted from a specific sectionof the page, then used regex/split/strip to clean the quote.
@@ -168,7 +168,7 @@ This story involved learning the basics of BeautifulSoup to pull the elements fr
           content = { 'clean_quote': clean_quote }
           return render(request, 'DailyBugle/dailyBugle_bs.html', content)
           
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-live-project)*
+*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## Other Skills Learned
 - Gained experience with Agile/Scrum methodology, including use of Azure DevOps, daily stand-up meetings, and sprint retrospective.
@@ -177,4 +177,4 @@ This story involved learning the basics of BeautifulSoup to pull the elements fr
 
 - Gained new experience with APIs, web scrapping, and researching solutions to get them functioning properly.
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-live-project)*
+*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
