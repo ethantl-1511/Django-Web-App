@@ -75,7 +75,7 @@ These functions rendered the home page, and the details page which would be used
 
 *Jump to: [CRUD Stories](#crud-stories), [API Story](#api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
-## API Story
+## RESTful API Story
 * [Create API](#create-api)
 * [Save API Results](#save-api-results)
 * [Delete Functionality](#delete-functionality)
