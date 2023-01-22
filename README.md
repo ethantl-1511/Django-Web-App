@@ -3,7 +3,7 @@
 ## Introduction
 During a two-week internship with Prosper IT Consulting, I participated in the creation of a database-driven Django web application using Python. The internship gave me experience using the Agile/Scrum methodology and Azure DevOps. I was given a minimum of 4 stories to complete, and an optional 6 stories to complete over the course of a two week sprint. I completed all 10 with time to spare.
 <br><br>
-The initial 5 stories had me set up the [back-end CRUD functionality](#crud-stories) for the application and connecting it to my own themed webpage. I styled the various pages using Bootstrap 4 as a base, and CSS for specific style changes. From there, I was given two stories for [implementing an API](#api-story) into the application, and two stories for [implementing data scrapping with BeautifulSoup](#beautifulsoup-story). Afterward, I had a story to improve the existing UI/UX and add some minor Javascript for flavor. The next story was to add the ability to save a random fact from the API and allow the user to view a list of saved favorites. The final 10th story was free to choose, and I decided to add the ability to delete a selection from the database and reflect it in the list.
+The initial 5 stories had me set up the [back-end CRUD functionality](#crud-stories) for the application and connecting it to my own themed webpage. I styled the various pages using Bootstrap 4 as a base, and CSS for specific style changes. From there, I was given two stories for [implementing an API](#RESTful-api-stories) into the application, and two stories for [implementing data scrapping with BeautifulSoup](#beautifulsoup-story). Afterward, I had a story to improve the existing UI/UX and add some minor Javascript for flavor. The next story was to add the ability to save a random fact from the API and allow the user to view a list of saved favorites. The final 10th story was free to choose, and I decided to add the ability to delete a selection from the database and reflect it in the list.
 
 Below are further descriptions of the various stories I worked on, along with code snippets of the work. The full code for all of my personal work files are also in this repository, along with a <a href="https://github.com/ethantl-1511/Python-Internship/tree/main/images">folder of images</a> to show visual examples of each section. 
 
@@ -73,7 +73,7 @@ These functions rendered the home page, and the details page which would be used
           content = {'entry': entry}
           return render(request, 'DailyBugle/dailyBugle_details.html', content)
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
+*Jump to: [CRUD Stories](#crud-stories), [Restful API Story](#RESTful-api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## RESTful API Story
 * [Create API](#create-api)
@@ -144,7 +144,7 @@ To ensure the saved list could not be cluttered, I created an additional simple 
           content = {'entry': entry}
           return render(request, 'DailyBugle/dailyBugle_favoriteAPI.html', content)
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
+*Jump to: [CRUD Stories](#crud-stories), [Restful API Story](#RESTful-api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## BeautifulSoup Story
 This story involved learning the basics of BeautifulSoup to pull the elements from a website. I used a variable for the url, made a response request, parsed the page using BeautifulSoup and grabbed the content I wanted from a specific sectionof the page, then used regex/split/strip to clean the quote.
@@ -168,7 +168,7 @@ This story involved learning the basics of BeautifulSoup to pull the elements fr
           content = { 'clean_quote': clean_quote }
           return render(request, 'DailyBugle/dailyBugle_bs.html', content)
           
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
+*Jump to: [CRUD Stories](#crud-stories), [Restful API Story](#RESTful-api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
 
 ## Other Skills Learned
 - Gained experience with Agile/Scrum methodology, including use of Azure DevOps, daily stand-up meetings, and sprint retrospective.
@@ -177,4 +177,4 @@ This story involved learning the basics of BeautifulSoup to pull the elements fr
 
 - Gained new experience with APIs, web scrapping, and researching solutions to get them functioning properly.
 
-*Jump to: [CRUD Stories](#crud-stories), [API Story](#api-story), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
+*Jump to: [CRUD Stories](#crud-stories), [Restful API Story](#RESTful-api-stories), [BeautifulSoup Story](#beautifulsoup-story)[Other Skills](#other-skills-learned), [Page Top](#python-internship)*
